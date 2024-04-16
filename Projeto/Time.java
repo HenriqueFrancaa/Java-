@@ -3,8 +3,8 @@ import java.util.Scanner;
 
 public class Time {
     String nome;
-    ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
     String tecnico;
+    ArrayList<Jogador> jogadores = new ArrayList<Jogador>();
 
     public Time(String nome, String tecnico) {
         this.nome = nome;
@@ -20,6 +20,7 @@ public class Time {
             String nome = scan.nextLine();
             int idade = scan.nextInt();
             int camisa = scan.nextInt();
+            scan.nextLine();
             String posicao = scan.nextLine();
             String nacionalidade = scan.nextLine();
             Jogador jogador = new Jogador(nome, idade, camisa, posicao, nacionalidade);
